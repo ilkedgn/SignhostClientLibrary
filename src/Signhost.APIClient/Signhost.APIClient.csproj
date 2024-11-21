@@ -37,6 +37,5 @@
     </PackageReference>
     <PackageReference Include="Polly" Version="7.1.1" />
     <PackageReference Include="SignhostClientLibrary" Version="4.0.473" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
 </Project>
