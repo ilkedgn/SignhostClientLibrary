@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run Renovate
         uses: renovatebot/github-action@v41.0.7
@@ -20,3 +20,4 @@ jobs:
         env:
           LOG_LEVEL: debug
           additionalConfig: "--autodiscover"
+          
