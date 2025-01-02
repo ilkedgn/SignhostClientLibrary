@@ -1,0 +1,20 @@
+{
+	"extends": ["config:base"],
+	"nuget": {
+	  "enabled": true
+	},
+	"automerge": false,
+	"prCreation": "immediate",
+	"forkProcessing": "enabled",
+	"packageRules": [
+		{
+		  "matchUpdateTypes": ["minor"],
+		  "groupName": "minor-updates"
+		},
+		{
+		  "matchUpdateTypes": ["major"],
+		  "groupName": "major-updates"
+		}
+	  ],
+	"autodiscover": true
+  }
