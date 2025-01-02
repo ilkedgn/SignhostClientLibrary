@@ -1,0 +1,16 @@
+{
+	"extends": ["config:base"],
+	"nuget": {
+	  "enabled": true
+	},
+	"automerge": false,
+	"prCreation": "immediate",
+	"forkProcessing": "enabled",
+	"packageRules": [
+	  {
+		"matchUpdateTypes": ["patch", "minor", "major", "pin", "bump", "pinDigest"],
+		"groupName": "all-packages"
+	  }
+	],
+	"autodiscover": true
+  }
