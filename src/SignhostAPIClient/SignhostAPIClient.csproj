@@ -52,15 +52,15 @@
   </ItemGroup>
   <ItemGroup Label="Package References">
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta008" PrivateAssets="All" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup Label=".NET 4.61 Package References" Condition="'$(TargetFramework)' == 'net462'">
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
-    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup Label=".NET standard Package References" Condition="'$(TargetFramework)' == 'netstandard1.4'">
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.*" />
-    <PackageReference Include="System.ValueTuple" Version="4.3.1" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 </Project>
