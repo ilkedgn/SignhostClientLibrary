@@ -9,7 +9,8 @@
 	"packageRules": [
 	  {
 		"matchUpdateTypes": ["patch", "minor", "major", "pin", "bump", "pinDigest"],
-		"groupName": "all-packages"
+		"groupName": "test-packages",
+		"rangeStrategy": "bump"
 	  }
 	],
 	"autodiscover": true
