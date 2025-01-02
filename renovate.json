@@ -1,0 +1,24 @@
+{
+	"extends": ["config:base"],
+	"nuget": {
+	  "enabled": true
+	},
+	"automerge": false,
+	"prCreation": "immediate",
+	"forkProcessing": "enabled",
+	"packageRules": [
+	  {
+		"matchUpdateTypes": ["patch", "minor"],
+		"groupName": "non-major-packages",
+		"enabled": true
+	  },
+	  {
+		"matchUpdateTypes": ["major"],
+		"groupName": "major-packages",
+		"enabled": true
+	  }
+	],
+	"autodiscover": true,
+	"dependencyDashboard": true,
+	"logLevel": "debug"
+  }
